@@ -1,0 +1,18 @@
+variables : 
+    age : entier
+    prix : entier
+
+Début
+    Affiche "Entrez votre âge : "
+    Lire age
+
+    Si age <= 12 Alors
+        prix := 10
+    Sinon Si age <= 17 Alors
+        prix := 15
+    Sinon
+        prix := 20
+    Fin Si
+
+    Affiche "Le prix de votre est : ", prix, "$"
+Fin

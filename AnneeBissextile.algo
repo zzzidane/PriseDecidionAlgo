@@ -1,0 +1,22 @@
+// Année bissextile
+variables :
+annee : entier
+estBissextile : booleen
+
+Début
+    Affiche "Entrez une année"
+    Lire annee
+
+    Si (annee modulo 4 = 0 Et annee modulo 100 != 0) OU (annee modulo 400 = 0) Alors
+        estBissextile := vrai
+    Sinon
+        estBissextile := faux
+    Fin Si
+
+    Si estBissextile Alors
+        Affiche annee, "est une année bissextile."
+    Sinon
+        Affiche annee, "n'est pas une année bissextile."
+    Fin Si
+Fin
+
